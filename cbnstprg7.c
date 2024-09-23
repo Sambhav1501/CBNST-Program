@@ -1,3 +1,4 @@
+//Newton forward interpolation
 #include<stdio.h>
 #include<math.h>
 
