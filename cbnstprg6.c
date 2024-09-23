@@ -1,3 +1,4 @@
+//newton rapson
 #include<stdio.h>
 #include<math.h>
 
