@@ -31,7 +31,7 @@ int main()
             printf("fail condition met");
             break;
         }
-        x2=x1-((x1-x0)/(f1-f0))*f0;
+        x2=x0-((x1-x0)/(f1-f0))*f0;
         printf("x = %f\n",x2);
         step++;
         f2=f(x2);
