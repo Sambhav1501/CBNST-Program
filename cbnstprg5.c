@@ -35,10 +35,17 @@ int main()
         printf("x = %f\n",x2);
         step++;
         f2=f(x2);
-        f0=f1;
-		f1=f2;
-		x0=x1;
-		x1=x2;
+        // Update the guesses based on the sign of f(x2)
+        if (f0 * f2 < 0) 
+	{
+            x1 = x2;
+            f1 = f2;
+        } 
+	else 
+	{
+            x0 = x2;
+            f0 = f2;
+        }
     }while(fabs(f2)>error);
     printf("root is %f",x2);
 	return 0;
